@@ -91,9 +91,9 @@ function refreshInventory(){
 
 var timer;
 cycle = document.getElementById("CycleJourNuit");
-cycle.innerHTML="Vous arrivez de nuit, attention les monstres sont plus dangereux dans la nuit noire.";
+cycle.innerHTML="Vous arrivez de jour, les monstres n'aiment pas la lumière vous avez de la chance.";
 function Cycle(){
-	var nuit = true;
+	var nuit = false;
 	clearInterval(timer);
 	timer = setInterval(function() {
 		nuit = !nuit;
